@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 18px Arial;
+        }
+    </style>
+</head>
+
+
+<body>
+    <script>
+        var nome = window.prompt(`Qual seu nome ?`);
+        var salario = Number (window.prompt(`Digite o salario`)); /*Define a variavel 'salario' pra somente number*/
+        salario.toLocaleString(`pt-BR`, {style: `currency`, currency: `BRL`})/*Muda a formatação monetaria usando $ */
+        document.writeln(`Ola ${nome} seu nome tem ${nome.length} letras <br/>`);/*Escreve a quantidade de letras na variavel 'nome' */
+        document.writeln(`Seu nome maiusculo é ${nome.toUpperCase()} <br/>`);/*Escreve a variavel 'nome' em maiusculo*/
+        document.writeln(`Seu nome em minusculo é ${nome.toLowerCase()}`)/*Escreve a variavel 'nome' em minusculo*/
+        document.write(`Seu salario é ${salario}`); 
+    </script>
+</body>
+</html>
